@@ -24,9 +24,10 @@ acceleration = 50.0
 acceleration_multiplier = 5.0
 max_speed = 250.0
 
-[node name="HitBoxComponent2D" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+[node name="HitBoxComponent2D" type="Area2D" parent="." node_paths=PackedStringArray("health_component", "velocity_component")]
 script = ExtResource("4_eo6j0")
 health_component = NodePath("../HealthComponent")
+velocity_component = NodePath("../VelocityComponent2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxComponent2D"]
 shape = SubResource("RectangleShape2D_u8o6n")

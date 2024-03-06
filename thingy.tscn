@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://test.gd" id="1_xloef"]
 [ext_resource type="Script" path="res://Components/health_component.gd" id="2_hxqmr"]
-[ext_resource type="Script" path="res://Components/velocity_component.gd" id="3_kshyq"]
-[ext_resource type="Script" path="res://Components/hitbox_component.gd" id="4_eo6j0"]
+[ext_resource type="Script" path="res://Components/2D/velocity_component_2d.gd" id="3_kshyq"]
+[ext_resource type="Script" path="res://Components/2D/hitbox_component_2d.gd" id="4_eo6j0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8o6n"]
 

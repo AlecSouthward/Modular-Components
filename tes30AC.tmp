@@ -1,40 +1,39 @@
-[gd_scene load_steps=6 format=3 uid="uid://ch4c2spmv60yk"]
+[gd_scene load_steps=5 format=3 uid="uid://ch4c2spmv60yk"]
 
 [ext_resource type="PackedScene" uid="uid://bfvw74l4xerng" path="res://thingy.tscn" id="1_e4dm7"]
 [ext_resource type="Script" path="res://Components/2D/hurtbox_component_2d.gd" id="2_o45xb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_svon1"]
-size = Vector2(20, 100)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kowvg"]
-
-[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_fek1k"]
-points = PackedVector2Array(-10, 48.07, 10, 14.54, -10, -14.11, -69.425, 6.72)
 
 [node name="test_main" type="Node2D"]
 
 [node name="Test" parent="." instance=ExtResource("1_e4dm7")]
-position = Vector2(147, -33)
 
 [node name="HurtBoxComponent" type="Area2D" parent="."]
 position = Vector2(170, 0)
 script = ExtResource("2_o45xb")
 damage = 15
+impact_power = 150
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxComponent"]
 shape = SubResource("RectangleShape2D_svon1")
 
 [node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("2_o45xb")
-damage = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-88, -3)
 shape = SubResource("CircleShape2D_kowvg")
 
-[node name="HurtBoxComponent2D" type="Area2D" parent="."]
-position = Vector2(-40, 56)
-script = ExtResource("2_o45xb")
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(155, 0)
+gizmo_extents = 2.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxComponent2D"]
-shape = SubResource("ConvexPolygonShape2D_fek1k")
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(170, 0)
+gizmo_extents = 2.0
+
+[node name="Marker2D3" type="Marker2D" parent="."]
+position = Vector2(170, 0)
+gizmo_extents = 5.0
