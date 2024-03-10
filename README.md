@@ -8,5 +8,5 @@ There is currently:
 3. **HurtBoxComponent** 2D and 3D
 4. **HitBoxComponent** 2D and 3D
 
-> [!TIP]
+> [!IMPORTANT]
 > The documentation for each Component is actually found inside Godot! Simply search for the Component you wish to check in the `Search Help` tab.
