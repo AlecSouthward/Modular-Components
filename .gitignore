@@ -1,0 +1,9 @@
+# Godot 4+ specific ignores
+.godot/
+*.tscn
+*.gd
+*.svg
+*.import
+*.tmp
+!module.svg*
+!Components/*
